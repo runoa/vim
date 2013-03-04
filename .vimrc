@@ -471,12 +471,3 @@ nnoremap <space>ge :Gedit
 nnoremap <space>gS :GitStatus<cr>
 nnoremap <space>gB :GitBlame<cr>
 
-"starting
-if has('vim_starting')
-    :vs
-    :vs
-    :vs
-    :vs
-    :vs
-endif
-

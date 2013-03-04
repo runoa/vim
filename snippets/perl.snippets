@@ -1,0 +1,35 @@
+snippet dump
+    use Data::Dumper; warn Dumper ${1};
+
+snippet sub
+    sub ${1} {
+        my ($self, %args) = @_;
+        return ${2};
+    }
+
+snippet execute
+    my $row = $self->execute(q{
+        ${1}
+    }, ${2});
+
+snippet select
+    my $row = $self->select_all({
+        ${1}
+    }, ${2});
+
+snippet selecto
+    my $row = $self->select_one({
+        ${1}
+    }, ${2});
+
+snippet die
+    die 'override';
+
+snippet valid
+    my %validated_args = validate_params_with(
+        params => \%args,
+        spec => {
+            ${1},
+        },
+    );
+
