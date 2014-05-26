@@ -13,6 +13,7 @@ NeoBundle 'Shougo/neocomplcache.git'
 NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimfiler.git'
 NeoBundle 'Shougo/neosnippet.git'
+NeoBundle 'Shougo/neosnippet-snippets.git'
 "NeoBundle 'scrooloose/syntastic'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-scripts/L9.git'
@@ -36,7 +37,7 @@ NeoBundle 'fuenor/qfixhowm'
 "NeoBundle 'tyru/skk.vim.git'
 NeoBundle 'mattn/webapi-vim.git'
 NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'vimtaku/vim-mlh.git'
+"NeoBundle 'vimtaku/vim-mlh.git'
 NeoBundle 'tomtom/tcomment_vim.git'
 NeoBundle 'rking/ag.vim'
 
@@ -92,14 +93,14 @@ endif
 set incsearch
 set ignorecase
 set smartcase
+set hlsearch
 nnoremap <space>h :set hlsearch! hlsearch?<cr>
 
 ""highlight
-nmap <space>mm <plug>(quickhl-toggle)
-xmap <space>mm <plug>(quickhl-toggle)
-nmap <space>M <plug>(quickhl-reset)
-xmap <space>M <plug>(quickhl-reset)
-nmap <space>mj <plug>(quickhl-match)
+nmap <space>mm <Plug>(quickhl-manual-this)
+xmap <space>mm <Plug>(quickhl-manual-this)
+nmap <space>M <Plug>(quickhl-manual-reset))
+xmap <space>M <plug>(quickhl-manual-reset))
 nmap <space>ma :QuickhlAdd 
 let g:quickhl_colors = [
     \ "ctermfg=6 ctermbg=1 gui=bold guifg=#ffffff guibg=#a07040",
@@ -163,9 +164,7 @@ nmap r <plug>(operator-replace)
 
 ""save
 inoremap <c-s> <esc>:w<cr>
-inoremap <c-w> <esc>:w<cr>
 nnoremap <c-s> :w<cr>
-nnoremap <c-w> :w<cr>
 
 ""emacs keybind
 inoremap <c-f> <right>
