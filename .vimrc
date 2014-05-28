@@ -3,8 +3,8 @@
 set nocompatible
 filetype off
 if has('vim_starting')
-    set runtimepath+=$HOME/.vim/neobundle.vim.git
-    call neobundle#rc(expand('~/.bundle'))
+    set runtimepath+=$HOME/.vim/bundle/neobundle.vim
+    call neobundle#rc(expand('~/.vim/bundle'))
 endif
 
 NeoBundle 'Shougo/neobundle.vim.git'
@@ -102,7 +102,7 @@ xmap <space>mm <Plug>(quickhl-manual-this)
 nmap <space>M <Plug>(quickhl-manual-reset))
 xmap <space>M <plug>(quickhl-manual-reset))
 nmap <space>ma :QuickhlAdd 
-let g:quickhl_colors = [
+let g:quickhl_manual_colors = [
     \ "ctermfg=6 ctermbg=1 gui=bold guifg=#ffffff guibg=#a07040",
     \ "ctermfg=0 ctermbg=2 gui=bold guifg=#ffffff guibg=#4070a0",
     \ "ctermfg=1 ctermbg=3 gui=bold guifg=#ffffff guibg=#40a070",
