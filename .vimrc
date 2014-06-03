@@ -101,7 +101,7 @@ nmap <space>mm <Plug>(quickhl-manual-this)
 xmap <space>mm <Plug>(quickhl-manual-this)
 nmap <space>M <Plug>(quickhl-manual-reset))
 xmap <space>M <plug>(quickhl-manual-reset))
-nmap <space>ma :QuickhlAdd 
+nmap <space>ma :QuickhlManualAdd 
 let g:quickhl_manual_colors = [
     \ "ctermfg=6 ctermbg=1 gui=bold guifg=#ffffff guibg=#a07040",
     \ "ctermfg=0 ctermbg=2 gui=bold guifg=#ffffff guibg=#4070a0",
