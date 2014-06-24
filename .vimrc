@@ -213,8 +213,9 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 """http://vim-users.jp/2010/11/hack185/
-imap <c-k> <plug>(neocomplcache_snippets_expand)
-smap <c-k> <plug>(neocomplcache_snippets_expand)
+imap <c-k> <Plug>(neosnippet_expand_or_jump)
+smap <c-k> <Plug>(neosnippet_expand_or_jump)
+xmap <c-k> <plug>(neosnippet_expand_or_jump)
 inoremap <expr><c-g> neocomplcache#undo_completion()
 inoremap <expr><c-l> neocomplcache#complete_common_string()
 inoremap <expr><cr> neocomplcache#smart_close_popup() . "\<cr>"
