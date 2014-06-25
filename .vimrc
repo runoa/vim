@@ -130,6 +130,7 @@ nnoremap <space>wq :wq<cr>
 nnoremap <space>qq :q<cr>
 nnoremap <space>qa :qall<cr>
 nnoremap U <c-r>
+vnoremap <c-r> :s/    /\t/g<cr>
 au BufRead,BufNewFile *.t set filetype=perl
 set fileencodings=utf-8,euc-jp,iso-2022-jp-3,iso-2022-jp,euc-jisx0213,ucs-bom,eucjp-ms,cp932
 
