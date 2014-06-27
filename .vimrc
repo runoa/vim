@@ -328,6 +328,7 @@ nnoremap <space>gg g;
 ""columnjump
 nmap <c-k> <Plug>(columnjump-backward)
 nmap <c-j> <Plug>(columnjump-forward)
+let g:columnjump_ignore_wrapped_lines=1
 
 ""easymotion
 let g:EasyMotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
