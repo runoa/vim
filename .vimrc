@@ -38,6 +38,8 @@ NeoBundle 'mattn/emmet-vim'
 "NeoBundle 'vimtaku/vim-mlh.git'
 NeoBundle 'tomtom/tcomment_vim.git'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'mhinz/vim-startify'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 "settings
 filetype on
@@ -470,4 +472,15 @@ nnoremap <space>gd :GitDiff<cr>
 nnoremap <space>ge :Gedit 
 nnoremap <space>gS :GitStatus<cr>
 nnoremap <space>gB :GitBlame<cr>
+
+"startify
+let g:startify_custom_indices = ['a', 's', 'd', 'f', 'j', 'k', 'l', 'g', 'h', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
+let g:startify_bookmarks = [
+  \ '~/vim/.vimrc',
+  \ ]
+
+"MultipleCursorsFind
+nnoremap <space>mf :MultipleCursorsFind 
+" vnoremap <space>mf :MultipleCursorsFind 
+vnoremap <space>mf "vy:MultipleCursorsFind <c-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<cr><cr>
 
