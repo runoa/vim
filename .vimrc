@@ -474,7 +474,7 @@ nnoremap <space>gS :GitStatus<cr>
 nnoremap <space>gB :GitBlame<cr>
 
 "startify
-let g:startify_custom_indices = ['a', 's', 'd', 'f', 'j', 'k', 'l', 'g', 'h', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
+let g:startify_custom_indices = ['a', 's', 'd', 'f', 'l', 'g', 'h', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
 let g:startify_bookmarks = [
   \ '~/vim/.vimrc',
   \ ]
