@@ -4,7 +4,9 @@ set nocompatible
 filetype off
 if has('vim_starting')
     set runtimepath+=$HOME/.vim/bundle/neobundle.vim
-    call neobundle#rc(expand('~/.vim/bundle'))
+    call neobundle#begin(expand('~/.vim/bundle'))
+    NeoBundleFetch 'Sougo/neobundle.vim'
+    call neobundle#end()
 endif
 
 NeoBundle 'Shougo/neobundle.vim.git'
@@ -40,6 +42,15 @@ NeoBundle 'tomtom/tcomment_vim.git'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 
 "settings
 filetype on
@@ -481,6 +492,6 @@ let g:startify_bookmarks = [
 
 "MultipleCursorsFind
 nnoremap <space>mf :MultipleCursorsFind 
-" vnoremap <space>mf :MultipleCursorsFind 
-vnoremap <space>mf "vy:MultipleCursorsFind <c-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<cr><cr>
+vnoremap <space>mf :MultipleCursorsFind 
+vnoremap <space>M "vy:MultipleCursorsFind <c-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<cr><cr>
 
