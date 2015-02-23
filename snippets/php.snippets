@@ -1,0 +1,11 @@
+snippet logp
+    print_r(${1});
+
+snippet logr
+    error_log(print_r(${1}, true));
+
+snippet log
+    error_log(${1});
+
+snippet enc
+    mb_convert_encoding(${1}, 'UTF-8', 'auto')
